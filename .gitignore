@@ -1,0 +1,15 @@
+# Виртуальное окружение
+.venv/
+venv/
+ENV/
+
+# Кэш Python
+__pycache__/
+*.pyc
+
+# Настройки PyCharm / IDE
+.idea/
+.vscode/
+
+# Конфигурации uv / сборщика (если есть)
+.uv/
