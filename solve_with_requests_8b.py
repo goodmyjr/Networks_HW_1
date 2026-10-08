@@ -37,11 +37,11 @@ def parse_html_link(text):
 
 response = session.get(URL, cookies={"user": ID})
 result_html = response.content.decode()
-request_count = 0
+requests_count = 0
 
 while response.status_code == 200:
-    request_count += 1
-    print(f"Шаг: {request_count}")
+    requests_count += 1
+    print(f"Шаг: {requests_count}")
 
     headers = {}
     data = {}
@@ -80,4 +80,4 @@ while response.status_code == 200:
     result_html = response.content.decode()
 
 print(result_html)
-print(f"Всего запросов: {request_count}")
+print(f"Всего запросов: {requests_count}")
